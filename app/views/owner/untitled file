@@ -1,0 +1,21 @@
+<html>
+	<div class="header">
+  <div class="container">
+    <img src="http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/logo-1m.svg">
+    <h1>Messenger</h1>
+  </div>
+</div>
+
+<div class="owners">
+  <div class="container">
+  
+    <% @owner.each do |owner| %>
+    	<div class="owners">
+        <p ><%= owner.firstname %></p>
+        <p ><%= owner.lastname %></p>
+    	</div>
+    <% end %>
+		
+    <%= link_to 'New Owner', "owenrs/new"%>
+  </div>
+</div></div></html>

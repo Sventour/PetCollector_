@@ -1,0 +1,19 @@
+
+<div class="owner">
+  <div class="container">
+ 
+	<div class="owner">
+    <h2><%= @owner.firstname %> <%= @owner.lastname %> </h2>
+    <p><%= @owner.summary %> </p>
+    
+    <% @pets.each do |pet| %>
+    	<h3><%= pet.name %></h3>
+		<h3><%= pet.species %></h3>
+		<h3><%= pet.breed %></h3>
+		<h3><%= pet.description %></h3>
+    <% end %>
+    
+	</div>
+   <%= link_to 'Edit', owner_edit_path(@owner) %>
+  </div>
+</div></div></html>

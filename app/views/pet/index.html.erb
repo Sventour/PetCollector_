@@ -1,0 +1,16 @@
+
+
+<div class="owners">
+  <div class="container">
+  
+    <% @owners.each do |owner| %>
+    	<div class="owners">
+        <p ><%= owner.firstname %></p>
+        <p ><%= owner.lastname %></p>
+        <%= link_to 'See more', owner_path(owner)%>
+    	</div>
+    <% end %>
+		
+    <%= link_to 'New Owner', "owners/new"%>
+  </div>
+</div></div></html>

@@ -1,0 +1,24 @@
+
+
+<div class="owners">
+  <div class="container">
+  
+   <%= form_for(@owner) do |f| %>
+    	<div class="field">
+        <%= f.label :firstname %> 
+        <%= f.text_field :firstname %> <br>
+        
+		 <%= f.label :lastname %>
+        <%= f.text_field :lastname %>
+        
+        <%= f.label :summary %>
+        <%= f.text_area :summary %>
+        
+    	</div>
+    	<div class="actions">
+         <%= f.submit "Update" %>
+      </div>
+    <% end %>
+
+  </div>
+</div></div></html>

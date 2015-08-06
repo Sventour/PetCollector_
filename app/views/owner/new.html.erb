@@ -1,0 +1,25 @@
+
+<html>
+<div class="create">
+  <div class="container">
+    
+    <%= form_for(@owner) do |f| %>
+    	<div class="field">
+        <%= f.label :firstname %> 
+        <%= f.text_field :firstname %> <br>
+        
+		 <%= f.label :lastname %>
+        <%= f.text_field :lastname %>
+        
+        <%= f.label :summary %>
+        <%= f.text_area :summary %>
+
+        
+    	</div>
+    	<div class="actions">
+         <%= f.submit "Create" %>
+      </div>
+    <% end %>
+    
+  </div>
+</div></html>
